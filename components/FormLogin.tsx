@@ -9,12 +9,13 @@ function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
 
   return (
     <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
-      <div className='flex flex-col gap-1'>
-        <label htmlFor='email' className='font-medium'>Email</label>
+      <div className='flex flex-col gap-6 text-gray-600'>
+        
+        {/* //Input */}
         <div className="flex">
-            <div className='flex items-center border-b-2 fill-gray-200'>
-                <div className="flex self-center fill-icon">
-                    <RiUser3Line />                    
+            <div className='flex items-center border-b-2 border-gray-300'>
+                <div className="flex self-center">
+                    <RiUser3Line className='fill-gray-500'/>                    
                 </div>
             </div>
             <input 
@@ -22,17 +23,17 @@ function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
             name='email' 
             id='email' 
             className="
-                w-full h-12 px-1 outline-none border-b-2 text-sm border-gray-200
+                w-full h-12 px-1 outline-none border-b-2 text-sm border-gray-300 bg-transparent
                 placeholder:text-sm
             " 
             placeholder='Email'
             />
         </div>
-        <label htmlFor="password" className='font-medium' >Password</label>
-        <div className='flex'>
-            <div className='flex items-center border-b-2 fill-gray-200'>
-                <div className="flex self-center fill-icon">
-                    <RiLockLine />                    
+
+        <div className='flex '>
+            <div className='flex items-center border-b-2 border-gray-300'>
+                <div className="flex self-center">
+                    <RiLockLine className='fill-gray-500'/>                    
                 </div>
             </div>
             <input 
@@ -40,13 +41,12 @@ function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
                 name='password' 
                 id='password' 
                 className="
-                    w-full h-12 px-1 outline-none border-b-2 text-sm border-gray-200
+                    w-full h-12 px-1 outline-none border-b-2 text-sm border-gray-300 bg-transparent
                     placeholder:text-sm
                 "
                 placeholder='Password'
             />
         </div>
-
       </div>
 
       <button

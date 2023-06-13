@@ -1,6 +1,11 @@
 import { FormLogin } from '@/components/FormLogin'
 import Image from 'next/image'
-import { RiFacebookBoxLine, RiLinkedinBoxLine, RiTwitterLine, RiCopyrightLine} from 'react-icons/ri'
+import { 
+  RiFacebookBoxLine, 
+  RiLinkedinBoxLine, 
+  RiTwitterLine, 
+  RiCopyrightLine
+} from 'react-icons/ri'
 
 export default function Home() {
   return (
@@ -17,13 +22,13 @@ export default function Home() {
           font-bold text-4xl text-white h-44 items-end hidden 
           md:flex
         '>
-            <h1>Title</h1>
+            <h1>Brothers</h1>
         </header>
         
         <main className='flex items-center justify-center'>
           <div
             className='
-              flex flex-col justify-center h-screen w-screen gap-8 p-4 bg-white
+              flex flex-col justify-center h-screen w-screen gap-6 p-4 bg-cyan-50
               md:w-96 md:h-1/2 md:p-8 md:rounded-lg md:shadow-lg
             '
           >
